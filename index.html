@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your One-Page Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav-container" id="navbar">
+    <header class="titel">Github: Technical Documentation</header>
+    <ul class="nav-menu">
+        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#creating_a_repository" class="nav-link">Creating a Repository</a></li>
+        <li><a href="#creating_a_branch" class="nav-link">Creating a Branch</a></li>
+        <li><a href="#making_and_committing_changes" class="nav-link">Making and committing Changes</a></li>
+        <li><a href="#opening_a_pull_request" class="nav-link">Opening a Pull Request</a></li>
+
+        <li><a href="#merging_your_pull_request" class="nav-link">Merging your pull request</a></li>
+
+        <li><a href="#working_with_the_command_line" class="nav-link">Working With the Command Line</a></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+    
+<section id="introduction" class="main-section">
+    <header><h2>Introduction</h2></header>
+    <p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+
+<p>This guide teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn GitHub's pull request workflow, a popular way to create and review code.</p>
+
+<p>In this quickstart guide, you will:</p>
+<ul>
+<li>Create and use a repository</li>
+<li>Start and manage a new branch</li>
+<li>Make changes to a file and push them to GitHub as commits
+Open and merge a pull request</li>
+<li>After this quickstart guide you should be able to use Github in a basic way</li>
+<li>You can use some basic GIT command line commands</li>
+</ul>
+</section>
+
+<section id="creating_a_repository" class="main-section">
+    <header><h2>Creating a Repository</h2></header>
+    <p>A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. Often, repositories include a README file, a file with information about your project. README files are written in the plain text Markdown language.</p>
+
+    <p>GitHub lets you add a README file at the same time you create your new repository. GitHub also offers other common options such as a license file, but you do not have to select any of them now.</p>
+
+<p>Your hello-world repository can be a place where you store ideas, resources, or even share and discuss things with others.</p>
+
+<ol>
+    <li>In the upper-right corner of any page, select , then click New repository.
+
+</li>
+    <li>In the "Repository name" box, type hello-world.</li>
+    <li>In the "Description" box, type a short description.</li>
+    <li>Select whether your repository will be Public or Private.</li>
+    <li>Select Add a README file.</li>
+    <li>Click Create repository.</li>
+    </ol>
+
+</section>
+
+<section id="creating_a_branch" class="main-section">
+    <header><h2>Creating a branch</h2></header>
+    <p>Branching lets you have different versions of a repository at one time.</p>
+
+<p>By default, your repository has one branch named main that is considered to be the definitive branch. You can create additional branches off of main in your repository. You can use branches to have different versions of a project at one time.</p>
+<p> This is helpful when you want to add new features to a project without changing the main source of code. The work done on different branches will not show up on the main branch until you merge it, which we will cover later in this guide.</p> <p> You can use branches to experiment and make edits before committing them to main.</p>
+
+<p>When you create a branch off the main branch, you're making a copy, or snapshot, of main as it was at that point in time.</p> <p> If someone else made changes to the main branch while you were working on your branch, you could pull in those updates.</p>
+
+<p>Have you ever saved different versions of a file? Something like:</p>
+
+<ul>
+
+<li>story.txt</li>
+<li>story-edit.txt</li>
+<li>story-edit-reviewed.txt</li>
+
+<p>Branches accomplish similar goals in GitHub repositories.</p>
+
+<p>Here at GitHub, our developers, writers, and designers use branches for keeping bug fixes and feature work separate from our main (production) branch. When a change is ready, they merge their branch into main.</p>
+
+<ol>
+    <li>Click the Code tab of your hello-world repository.</li>
+    <li>Above the file list, click the dropdown menu that says main.</li>
+    <li>Type a branch name, readme-edits, into the text box.</li>
+    <li>Click Create branch: readme-edits from main.
+
+</li>
+    </ol>
+
+    <p>Now you have two branches, main and readme-edits. Right now, they look exactly the same. Next you'll add changes to the new branch.</p>
+
+
+</section>
+
+<section id="making_and_committing_changes" class="main-section">
+    <header><h2>Making and committing Changes</h2></header>
+  <p>When you created a new branch in the previous step, GitHub brought you to the code page for your new readme-edits branch, which is a copy of main.</p<>
+
+<p>You can make and save changes to the files in your repository. On GitHub, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made.</p> <p>Commit messages capture the history of your changes so that other contributors can understand what you’ve done and why.</p>
+
+<ol>
+    <li>Under the readme-edits branch you created, click the README.md file.</li>
+    <li>To edit the file, click the pencil icon</li>
+    <li>In the editor, write a bit about yourself. Try using different Markdown elements.</li>
+    <li>Click Commit changes....</li>
+    <li>In the "Commit changes" box, write a commit message that describes your changes.</li>
+    <li>Click Commit changes.</li>
+    </ol>
+
+    <p>These changes will be made only to the README file on your readme-edits branch, so now this branch contains content that's different from main.</p>
+</section>
+
+<section id="opening_a_pull_request" class="main-section"> 
+<header><h2>Opening a Pull Request</h2></header>
+
+<p>Now that you have changes in a branch off of main, you can open a pull request.</p>
+
+<p>Pull requests are the heart of collaboration on GitHub. When you open a pull request, you're proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in different colors.</p>
+
+<p>As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.</p>
+
+<p>By using GitHub's @mention feature in your pull request message, you can ask for feedback from specific people or teams, whether they're down the hall or 10 time zones away.</p>
+
+<p>You can even open pull requests in your own repository and merge them yourself. It's a great way to learn the GitHub flow before working on larger projects.</p>
+
+<ol>
+    <li>Click the Pull requests tab of your hello-world repository.</li>
+    <li>Click New pull request</li>
+    <li>In the Example Comparisons box, select the branch you made, readme-edits, to compare with main (the original).</li>
+    <li>Look over your changes in the diffs on the Compare page, make sure they're what you want to submit.</li>
+    <li>Click Create pull request.</li>
+    <li>Give your pull request a title and write a brief description of your changes. You can include emojis and drag and drop images and gifs.</li>
+    <li>Optionally, to the right of your title and description, click the little wheel next to Reviewers, Assignees, Labels, Projects, or Milestone to add any of these options to your pull request. You do not need to add any yet, but these options offer different ways to collaborate using pull requests. </li>
+    <li>Click Create pull request.</li>
+    </ol>
+
+    <p>Your collaborators can now review your edits and make suggestions.</p>
+
+</section>
+
+<section id="merging_your_pull_request" class="main-section"> 
+<header><h2>Merging Your Pull Request</h2></header>
+
+<p>In this final step, you will merge your readme-edits branch into the main branch. After you merge your pull request, the changes on your readme-edits branch will be incorporated into main.</p>
+
+<p>Sometimes, a pull request may introduce changes to code that conflict with the existing code on main. If there are any conflicts, GitHub will alert you about the conflicting code and prevent merging until the conflicts are resolved. You can make a commit that resolves the conflicts or use comments in the pull request to discuss the conflicts with your team members.</p>
+
+<p>In this guide, you should not have any conflicts, so you are ready to merge your branch into the main branch.</p>
+
+<ol>
+    <li>At the bottom of the pull request, click Merge pull request to merge the changes into main.</li>
+    <li>Click Confirm merge. You will receive a message that the request was successfully merged and the request was closed.</li>
+    <li>Click Delete branch. Now that your pull request is merged and your changes are on main, you can safely delete the readme-edits branch. If you want to make more changes to your project, you can always create a new branch and repeat this process.</li>
+    </ol>
+
+</section>
+
+<section id="working_with_the_command_line" class="main-section"> 
+<header><h2>Working With the Command Line</h2></header>
+
+<p>Working with Git on the command line can be daunting. To help with that, we’ve put together a list of common Git commands, what each one means, and how to use them. Our hope is that this makes Git easier to use on a daily basis.</p>
+
+<p>Git has many great clients that allow you to use Git without the command line. Knowing what actions the client is performing in the background is beneficial to understanding how Git works. If you’re getting started with Git also check out our fantastic guide on the topic.</p>
+
+<p>Working with local repositories
+git init
+This command turns a directory into an empty Git repository. This is the first step in creating a repository. After running git init, adding and committing files/directories is possible.</p>
+
+<p>Usage:</p>
+<div class="container">
+<code> <ul>
+<li># change directory to codebase</li>
+<li>$ cd /file/path/to/code</li>
+
+<li># make directory a git repository</li>
+<li>$ git init</code></ul></li></code></div>
+
+<p>In Practice:</p>
+<div class="container">
+<code>
+    <ul><li># change directory to codebase</li>
+<li>$ cd /Users/computer-name/Documents/website</li>
+
+<li># make directory a git repository</li>
+<li>$ git init</li>
+<li>Initialized empty Git repository in /Users/computer-name/Documents/website/.git/M</li></ul></code></div>
+
+<p>git add</p>
+<p>Adds files in the to the staging area for Git. Before a file is available to commit to a repository, the file needs to be added to the Git index (staging area). There are a few different ways to use git add, by adding entire directories, specific files, or all unstaged files.</P>
+
+<p>Usage:</p>
+<div class="container">
+<code>$ git add <file or directory name></div>
+  <p>In Practice:</p>
+<div class="container">
+<ul>
+<li># To add all files not staged:</li>
+<li>$ git add .</li>
+
+<li># To stage a specific file:</li>
+<li>$ git add index.html</li>
+
+<li># To stage an entire directory:</li>
+<li>$ git add css</code></li>
+</ul></div>
+<p>git commit</p>
+<p>Record the changes made to the files to a local repository. For easy reference, each commit has a unique ID.</p>
+
+<p>It’s best practice to include a message with each commit explaining the changes made in a commit. Adding a commit message helps to find a particular change or understanding the changes.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code>
+    <ul>
+        <li># Adding a commit with message</li>
+<li>$ git commit -m "Commit message in quotes"</li></ul></code></div>
+<p>In Practice:</p>
+
+<div class="container">
+<code>
+    <ul>
+        <li>$ git commit -m "My first commit message"</li>
+<li>[SecretTesting 0254c3d] My first commit message</li>
+<li>1 file changed, 0 insertions(+), 0 deletions(-)</li>
+<li>create mode 100644 homepage/index.html</li>
+</ul>
+</code></div>
+<p>git status<p>
+<p>This command returns the current state of the repository.</p>
+
+<p>git status will return the current working branch. If a file is in the staging area, but not committed, it shows with git status. Or, if there are no changes it’ll return nothing to commit, working directory clean.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code>$ git status</code></div>
+
+<p>In Practice:</p>
+
+<div class="container">
+<code><ul><li># Message when files have not been staged (git add)</li>
+<li>$ git status</li>
+<li>On branch SecretTesting</li>
+<li>Untracked files:</li>
+  <li>(use "git add <file>..." to include in what will be committed)</li>
+  
+
+  <li>homepage/index.html</li>
+
+<li># Message when files have been not been committed (git commit)</li>
+<li>$ git status</li>
+<li>On branch SecretTesting</li>
+<li>Your branch is up-to-date with 'origin/SecretTesting'.</li>
+<li>Changes to be committed:</li>
+  <li>(use "git reset HEAD <file>..." to unstage)</li>
+
+        <li>new file:   homepage/index.html</li>
+
+<li># Message when all files have been staged and committed </li>
+<li>$ git status</li>
+<li>On branch SecretTesting</li>
+<li>nothing to commit, working directory clean</li></ul></code> </div>
+<p>git config<p>
+<p>With Git, there are many configurations and settings possible. git config is how to assign these settings. Two important settings are user user.name and user.email. These values set what email address and name commits will be from on a local computer. With git config, a --global flag is used to write the settings to all repositories on a computer. Without a --global flag settings will only apply to the current repository that you are currently in.</p>
+
+<p>There are many other variables available to edit in git config. From editing color outputs to changing the behavior of git status. Learn about git config settings in the official Git documentation.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code>$ git config <setting> <command></code></div>
+
+<p>In Practice:</p>
+
+<div class="container">
+<code><ul><li># Running git config globally</li>
+<li>$ git config --global user.email "my@emailaddress.com"</li>
+<li>$ git config --global user.name "Brian Kerr"</li>
+
+<li># Running git config on the current repository settings</li>
+<li>$ git config user.email "my@emailaddress.com"</li>
+<li>$ git config user.name "Brian Kerr" </li></ul></code> </div>
+
+<p>git branch</p>
+
+<p>To determine what branch the local repository is on, add a new branch, or delete a branch.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code><ul><li># Create a new branch</li>
+<li>$ git branch <branch_name></li>
+
+<li># List all remote or local branches</li>
+<li>$ git branch -a</li>
+
+<li># Delete a branch</li>
+<li>$ git branch -d <branch_name></li>
+</ul></code> </div>
+
+<p>In Practice:</p>
+
+<div class="container">
+<code><ul><li># Create a new branch</li>
+<li>$ git branch new_feature</li>
+
+<li># List branches</li>
+<li>$ git branch -a</li>
+<li>* SecretTesting</li>
+  <li>new_feature</li>
+  <li>remotes/origin/stable</li>
+  <li>remotes/origin/staging</li>
+  <li>remotes/origin/master -> origin/SecretTesting</li>
+  
+<li># Delete a branch</li>
+<li>$ git branch -d new_feature</li>
+<li>Deleted branch new_feature (was 0254c3d).</li>
+</ul> </code> </div>
+<p>git checkout</p>
+
+<p>To start working in a different branch, use git checkout to switch branches.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code><ul><li># Checkout an existing branch</li>
+<li>$ git checkout <branch_name></li>
+
+<li># Checkout and create a new branch with that name</li>
+<li>$ git checkout -b <new_branch></li></ul></code></div>
+
+<p>In Practice:</p>
+
+<div class="container">
+<code><ul><li># Switching to branch 'new_feature'</li>
+<li>$ git checkout new_feature</li>
+<li>Switched to branch 'new_feature'</li>
+
+<li># Creating and switching to branch 'staging'</li>
+<li>$ git checkout -b staging</li>
+<li>Switched to a new branch 'staging'</li></ul></code></div>
+
+
+<p>git merge</p>
+
+<p>Integrate branches together. git merge combines the changes from one branch to another branch. For example, merge the changes made in a staging branch into the stable branch.</p>
+
+<p>Usage:</p>
+
+<div class="container">
+<code><ul><li># Merge changes into current branch</li>
+<li>$ git merge <branch_name></li></ul></code></div>
+<p>In Practice:</p>
+
+<div class="container">
+<code><ul><li># Merge changes into current branch</li>
+<li>$ git merge new_feature</li>
+<li>Updating 0254c3d..4c0f37c</li>
+<li>Fast-forward</li>
+ <li>homepage/index.html | 297 ++</li>
+ <li>1 file changed, 297 insertions(+)</li>
+ <li>create mode 100644 homepage/index.html</li></ul></code></div>
+
+
+
+</section>
+
+</main>
+</body>
+</html>
