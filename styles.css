@@ -71,11 +71,12 @@
   
   
   .container {
-  background-color: grey;
-  padding: 20px;
-    -webkit-box-shadow: 8px 5px 15px 5px #000000; 
-  box-shadow: 8px 5px 15px 5px #000000;
-  }
+    background-color: #B0A695;
+    color: #000;
+    padding: 20px;
+      -webkit-box-shadow: 8px 5px 15px 5px #000000; 
+    box-shadow: 8px 5px 15px 5px #000000;
+    }
   
   
   #working_with_the_command_line li {
